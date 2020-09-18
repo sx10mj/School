@@ -1,4 +1,4 @@
-package print;
+package chapter3;
 
 public class BingoRules {
 	

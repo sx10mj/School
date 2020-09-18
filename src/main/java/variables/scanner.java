@@ -1,14 +1,15 @@
 package variables;
-import java.util.*;
+import java.util.Scanner;
 
-//age address phone number
 public class scanner 
 {
 	public static void main(String[] args)
 	{
+//		Opens a scanner
 		Scanner input = new Scanner(System.in);
 		String correct = "No";
 		
+//		Prompts for name, age, address, and phone number, then confirms information and gives chance for re-input
 		while (correct.charAt(0) == 'N' || correct.charAt(0) == 'n')
 		{
 			System.out.println("What name shalt thou choose? ");
@@ -37,9 +38,11 @@ public class scanner
 			}
 			
 		}
+		input.close();
 		
 	}
 	
+//	Prints a snide remark based on user's age
 	public static void snideAgeRemark(String age)
 	{
 		int ha = Integer.parseInt(age);
@@ -60,6 +63,5 @@ public class scanner
 			System.out.println("Bingo club left three hours ago. Wait, you're looking for me? Ah... ");
 		}
 	}
-	
 
 }
