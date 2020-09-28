@@ -19,6 +19,7 @@ public class randomNumbers
 		char charMoney = (char)(money);
 		System.out.println(charMoney);
 		
+		input.close();
 		
 	}
 	
