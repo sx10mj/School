@@ -1,7 +1,5 @@
 package chapter5;
-
 import java.util.Scanner;
-import java.text.NumberFormat;
 public class Grade 
 {
 	public static void main(String[] args) 
@@ -35,7 +33,6 @@ public class Grade
 		System.out.println("The corresponding letter grade is: " + lettergrade);
 		
 		input.close();
-
 	}
 
 }
