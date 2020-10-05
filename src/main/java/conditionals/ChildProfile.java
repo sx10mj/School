@@ -15,6 +15,7 @@ public class ChildProfile
 //		makes some preliminary variables to be changed within if statements
 		String status = "";
 		String toiletTrained = "";
+		String diet = "";
 		
 //		makes sure age is in range
 		while (age > 6 || age < 0)
@@ -50,11 +51,20 @@ public class ChildProfile
 			}
 		}
 		
-//		gets diet (and ensures it's either vegetarian or regular
-		String diet = input(input, "Enter your child's diet (Vegetarian or Regular: ");
-		while (!diet.equals("Vegetarian") && !diet.equals("Regular"))
+//		gets diet (and ensures it's either vegetarian or regular)
+		diet = input(input, "Enter your child's diet (Vegetarian or Regular): ");
+		while (diet.toUpperCase().charAt(0) != 'V' && diet.toUpperCase().charAt(0) != 'R')
 		{
-			diet = input(input, "Please enter either Vegetarian or Regular (mind spelling and capitalization): ");
+			diet = input(input, "Please enter either Vegetarian or Regular: ");
+		}
+		
+		if (diet.toUpperCase().charAt(0) == 'V')
+		{
+			diet = "Vegetarian";
+		}
+		else if (diet.toUpperCase().charAt(0) == 'R')
+		{
+			diet = "Regular";
 		}
 		
 //		output

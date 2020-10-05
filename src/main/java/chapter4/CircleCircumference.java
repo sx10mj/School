@@ -12,9 +12,13 @@ public class CircleCircumference
 		System.out.println("What is the radius of your circle?");
 		double radius = input.nextDouble();
 		
+		if (radius < 0)
+		{
+			System.out.println("Negative radii are illegal.");
+		}
 		double circumference = 2 * pi * radius;
 		
-		System.out.println("The circumference of your circle is about " + (int)(circumference * 100) / 100.0);
+		System.out.println("The circumference of your circle is " + Math.round(circumference * 100) / 100.0);
 		
 		
 		input.close();

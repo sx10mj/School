@@ -1,6 +1,7 @@
 package variables;
 import java.util.Scanner;
 //this program returns information about two user-inputed three-digit numbers
+//this doesn't work for non-three digit numbers, alas and i still can't figure out why
 public class ThreeDigit {
 
 	public static void main(String[] args) 
