@@ -11,7 +11,7 @@ public class NumberChanger2
 	{
 		System.out.println("Welcome to base converter!");
 		Scanner input = new Scanner(System.in);
-		String q1 = "Please enter the base number you would like to convert to: ";
+		String q1 = "Please enter the base you would like to convert to: ";
 		String q2 = "Please enter your number: ";
 		
 		int numsys = input(input, q1);
@@ -23,9 +23,7 @@ public class NumberChanger2
 		
 		numberConversion(numsys, number, firstBase);
 		input.close();
-
 	}
-	
 	//gets base to be converted to and number to be converted
 	public static int input(Scanner input, String q)
 	{
@@ -87,9 +85,7 @@ public class NumberChanger2
 			{
 				numberConversion(numsys, remainder, base - 1);//do the same thing over again with the remainder until we run out of place values (i.e. if the remainder is 0)
 			}
-		}
-		
+		}	
 	}
-	
 }
 

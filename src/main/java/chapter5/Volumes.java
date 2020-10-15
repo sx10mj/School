@@ -28,7 +28,6 @@ public class Volumes
 		}
 		input.close();
 		int intVolume = (int) (volume * 1000);
-		System.out.println(intVolume);
 		volume = intVolume / 1000.0;
 		System.out.println("The volume of your shape is: " + volume);
 	}
