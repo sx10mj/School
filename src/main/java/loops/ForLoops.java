@@ -4,7 +4,7 @@ public class ForLoops {
 
 	public static void main(String[] args) throws InterruptedException 
 	{
-		String word = "";
+		String word = "BINGO";
 		System.out.println("Length: " + word.length());
 		for(int i = 0; i < word.length(); i++)
 		{
@@ -25,7 +25,7 @@ public class ForLoops {
 			userWord = input.nextLine();
 			counter++;
 		}
-		System.out.println("You inputted " + counter + "words.");
+		System.out.println("You inputted " + counter + " words.");
 		input.close();
 
 	}

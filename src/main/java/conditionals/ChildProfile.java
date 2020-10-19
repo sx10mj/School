@@ -12,7 +12,7 @@ public class ChildProfile
 		String name = input(input, "Enter your child's name: ");
 		int age = Integer.parseInt(input(input, "Enter your child's age: "));
 		
-//		makes some preliminary variables to be changed within if statements
+//		initializes some preliminary variables to be changed within if statements
 		String status = "";
 		String toiletTrained = "";
 		String diet = "";
@@ -68,7 +68,7 @@ public class ChildProfile
 		}
 		
 //		output
-		System.out.println("\n=======================");
+		System.out.println("\n============================");
 		System.out.println(name + "'s Profile\n");
 		
 		String[] subtitles = {"Age", "Status", "Diet", "Toilet Training"};
