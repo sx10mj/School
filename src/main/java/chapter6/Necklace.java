@@ -22,17 +22,21 @@ public class Necklace {
 		}
 		
 		int original = num1;
+		int original2 = num2;
+		int before = num1;
 
 		int num3 = 0;
 		System.out.print(num1 + " " + num2 + " ");
-		while (num3 != original)
+		while (before != original || num3 != original2)
 		{
+			before = num3;
 			num3 = (num1 + num2) % 10;
 			System.out.print(num3 + " ");
+			
 			num1 = num2;
 			num2 = num3;
 		}
-		System.out.print(num1 + " " + num2);
+		
 		input.close();
 
 	}

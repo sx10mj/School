@@ -19,8 +19,8 @@ public class DiceRolls {
 				rolled[j] = roll.nextInt(6) + 1;
 				System.out.print(rolled[j] + "\t");
 				sum += rolled[j];
-				counter++;
 			}
+			counter++;
 			System.out.println(sum);
 		}
 		
