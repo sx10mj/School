@@ -14,15 +14,19 @@ public class Quotes {
 		String quoteWS = input.nextLine();
 		String quote = quoteWS.trim();
 		
+		charNum = quote.length();
+		
 		for (int i = 0; i < quote.length(); i++) 
 		{
 			if (quote.charAt(i) == ' ')
 			{
 				wordNum++;
-				withoutSpaces--;
 			}
-			charNum++;
-			withoutSpaces++;
+			else
+			{
+				withoutSpaces++;
+			}
+			
 		}
 		
 		double wordAverage = (double)(withoutSpaces) / wordNum;
