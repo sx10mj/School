@@ -8,9 +8,9 @@ public class CountLetters {
 		Scanner input = new Scanner(System.in);
 		
 		System.out.println("Enter a word: ");
-		String userWord = input.nextLine();
+		String userWord = input.nextLine().toUpperCase();
 		
-		String alphabet = "abcdefghijklmnopqrstuvwxyz";
+		String alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 		char[] letters = alphabet.toCharArray();
 		int[] occurrence = new int[26];
 		
@@ -24,11 +24,11 @@ public class CountLetters {
 				{
 					occurrence[j] += 1;
 				}
-			}
-			for (int k = 0; k < 26; k ++)
-			{
-				System.out.println(letters[k] + " : " + occurrence[k]);
-			}
+			}	
+		}
+		for (int k = 0; k < 26; k ++)
+		{
+			System.out.println(letters[k] + ": " + occurrence[k]);
 		}
 		
 		input.close();

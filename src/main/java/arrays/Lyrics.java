@@ -1,6 +1,6 @@
 package arrays;
-import java.util.ArrayList;
-import java.util.Arrays;
+//import java.util.ArrayList;
+//import java.util.Arrays;
 
 public class Lyrics {
 
@@ -199,7 +199,7 @@ public class Lyrics {
 				"Not throwing away my shot!";
 		
 		String[] words = lyrics.split(" ");
-		String[] wordBank = {""};
+//		String[] wordBank = {""};
 		
 //		ArrayList<String> myList = new ArrayList<String>(Arrays.asList(wordBank));
 		
