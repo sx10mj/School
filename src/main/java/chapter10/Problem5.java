@@ -13,3 +13,48 @@ public class Problem5 {
 	}
 
 }
+
+
+
+
+
+
+
+
+//array[i] = formula applied to index value
+//0 = 0 + 10s digit + 1s digit = 0
+//29 = 29 + 2 + 9 = 40
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

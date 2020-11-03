@@ -1,0 +1,5 @@
+Pens,4.55,10
+Desk,105.25,5
+Computers,575.50,10
+Lights, 45.90,40
+Textbooks, 125.49,200
